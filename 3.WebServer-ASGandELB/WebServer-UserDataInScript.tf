@@ -6,21 +6,11 @@
 provider "aws" {
   region = "us-west-2"
 }
-#----------Variables--------------------
-variable "myVPC_id" {
-  default = "vpc-dfd21ba7"
-}
-variable "myPublicSubnetA_id" {
-  default = "subnet-4b2b1e11"
-}
-variable "myPublicSubnetB_id" {
-  default = "subnet-820f55fb"
-}
 
 # ---- Launch Configuration for ASG ----
 resource "aws_launch_configuration" "myLC" {
     image_id        = "ami-01e24be29428c15b2"
-    instance_type   = "t3.micro"
+    instance_type   = "${var.myInstanceSize}"
     security_groups = ["${aws_security_group.MySecurityGroup.id}"]
     key_name        = "dastahov-oregon"
     user_data       = "${file("WebServer-userdata.sh")}"
