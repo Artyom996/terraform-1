@@ -32,6 +32,11 @@ resource "aws_autoscaling_group" "myASG" {
     value = "Terraform-WebServer-in-ASG"
     propagate_at_launch = true
   }
+  tag {
+    key = "Owner"
+    value = "${var.tag_owner}"
+    propagate_at_launch = true
+  }
   lifecycle {
   create_before_destroy = true
 }

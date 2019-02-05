@@ -2,7 +2,8 @@
 # File with name "*.tf" will be added automatically to Template
 
 
-#----------Variables--------------------
+#----------Variables and DEFAULT Values--------------------
+
 variable "myVPC_id" {
   default = "vpc-dfd21ba7"
 }
@@ -14,4 +15,7 @@ variable "myPublicSubnetB_id" {
 }
 variable "myInstanceSize" {
   default = "t2.nano"
+}
+variable "tag_owner" {
+  default = "Denis Astahov"
 }
