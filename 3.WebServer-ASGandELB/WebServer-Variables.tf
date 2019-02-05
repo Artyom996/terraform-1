@@ -1,5 +1,5 @@
 # Terraform Variable files
-# File with name "variables.tf" will be added automatically to Template
+# File with name "*.tf" will be added automatically to Template
 
 
 #----------Variables--------------------
@@ -13,5 +13,5 @@ variable "myPublicSubnetB_id" {
   default = "subnet-820f55fb"
 }
 variable "myInstanceSize" {
-  default = "t3.micro"
+  default = "t2.nano"
 }
