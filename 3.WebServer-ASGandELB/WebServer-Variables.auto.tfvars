@@ -5,6 +5,7 @@
 #WebServer-Variables.auto.tfvars  <- Values of Variables for previous file
 
 #----------Variables--------------------
+aws_region         = "us-west-2"
 myVPC_id           = "vpc-dfd21ba7"
 myPublicSubnetA_id = "subnet-4b2b1e11"
 myPublicSubnetB_id = "subnet-bfa6e2f4"  # subnet-bfa6e2f4, subnet-820f55fb, subnet-4b2b1e11

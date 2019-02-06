@@ -4,6 +4,9 @@
 
 #----------Variables and DEFAULT Values--------------------
 
+variable "aws_region" {
+  default = "us-west-2"
+}
 variable "myVPC_id" {
   default = "vpc-dfd21ba7"
 }

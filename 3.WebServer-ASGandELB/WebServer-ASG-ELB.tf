@@ -3,9 +3,7 @@
 #
 # Made by Denis Astahov  on  04-February-2019
 #---------------------------------------------------
-provider "aws" {
-  region = "us-west-2"
-}
+
 
 # ---- Launch Configuration for ASG ----
 resource "aws_launch_configuration" "myLC" {
